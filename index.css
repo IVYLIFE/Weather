@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Mulish:wght@300;400&family=Open+Sans:wght@300;400&family=Raleway:wght@200;300;400&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+
+  font-family: "Montserrat", sans-serif;
+  /* font-family: "Mulish", sans-serif; */
+  /* font-family: "Open Sans", sans-serif; */
+  /* font-family: "Raleway", sans-serif; */
+}
+
+body {
+  background-color: #222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 100vh;
+}
+
+
+#mainContainer {
+  max-width: 500px;
+  width: 90%;
+  padding: 1.5rem;
+  border-radius: 12px;
+  color: #fff;
+  text-align: center;
+  background: linear-gradient(135deg, #00feba, #5b548a);
+}
+
+
+
+#searchContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#searchContainer #searchInput {
+  padding: 1rem 1.5rem;
+  border-radius: 5px;
+  width: 85%;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  font-size: 1rem;
+}
+
+#searchContainer #searchBtn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.1s ease-in-out;
+  cursor: pointer;
+}
+
+#searchContainer #searchBtn img {
+  width: 45%;
+}
+
+#searchContainer #searchBtn:active {
+  transform: scale(0.9);
+}
+
+
+
+#weatherContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+#weatherContainer #weatherIcon {
+  width: 170px;
+}
+
+#weatherContainer #weatherDesc {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+
+#weatherInfo1 {
+  margin-top: 1rem;
+}
+
+#weatherInfo1 #temp {
+  font-size: 5rem;
+  font-weight: 500;
+}
+
+#weatherInfo1 #weatherLocation {
+  font-size: 2.3rem;
+}
+
+#weatherInfo2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin: 4rem 0 1rem;
+}
+
+#humidityContainer,
+#windSpeedContainer {
+  display: flex;
+  margin-bottom: 0.5rem;
+}
+
+#humidityContainer #humidityIcon,
+#windSpeedContainer #windSpeedIcon {
+  width: 40px;
+  height: 40px;
+  margin-right: 1rem;
+}
+
+#humidityContainer #humidity,
+#windSpeedContainer #windSpeed {
+  font-size: 1rem;
+}
+
+.text{
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+#error{
+  margin-top: 2rem;
+  font-weight: 500;
+  font-size: 1.2rem;
+  display: none;
+  transition: display .3s ease-in-out;
+}
+
+#weather{
+  display: none;
+}

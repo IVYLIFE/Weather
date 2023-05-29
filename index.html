@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./index.css">
+    <title>Weather V_1</title>
+</head>
+
+<body>
+
+
+    <div id="mainContainer">
+
+        <div id="searchContainer">
+            <input type="text" id="searchInput" placeholder="Search Place..." spellcheck="false">
+            <button id="searchBtn"><img src="./media/search.png" alt="Search Button"></button>
+        </div>
+
+        <div id="error">
+            Invalid City Name
+        </div>
+
+        <div id="weather">
+            <div id="weatherContainer">
+                <img id="weatherIcon" src="./media/clear.png" alt="weather icon">
+                <div id="weatherDesc">Sunny</div>
+            </div>
+
+            <div id="weatherInfo1">
+                <div id="temp">20° c</div>
+
+                <div id="weatherLocation">
+                    <p id="city">London</p>
+                    <p id="country">United Kingdom</p>
+                </div>
+            </div>
+
+            <div id="weatherInfo2">
+
+                <div id="humidityContainer">
+
+                    <img src="./media/humidity.png" alt="humidity icon" id="humidityIcon">
+
+                    <div>
+                        <div id="humidity">20 %</div>
+                        <div class="text">Humidity</div>
+                    </div>
+
+                </div>
+
+
+                <div id="windSpeedContainer">
+
+                    <img src="./media/wind.png" alt="wind speed icon" id="windSpeedIcon">
+
+                    <div>
+                        <div id="windSpeed">20 km/h</div>
+                        <div class="text">Wind Speed</div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="./index.js"></script>
+</body>
+
+</html>

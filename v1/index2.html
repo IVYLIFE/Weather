@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index2.css">
+    <title>Weather V_2</title>
+</head>
+
+<body>
+
+    <div id="mainContainer">
+        
+        <div id="searchContainer">
+            <input type="text" placeholder="Search Place..." spellcheck="false" id="searchInput">
+            <button id="searchBtn"> <img src="./media/search.png" alt="Search Button"> </button>
+        </div>
+
+        <div id="error">
+            Invalid City Name
+        </div>
+
+        <div id="weather">
+            <img src="./media/rain.png" alt="Rain" id="weatherIcon">
+            
+            <h1 id="temp">22° c</h1>
+            <h2 id="city">London</h2>
+
+            <div id="weatherInfo">
+
+                <div class="col">
+                    <img src="./media/humidity.png" alt="humidity">
+                    <div>
+                        <p id="humidity">50%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <img src="./media/wind.png" alt="wind">
+                    <div>
+                        <p id="windSpeed">15 km/h</p>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
