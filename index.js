@@ -52,7 +52,15 @@ async function getWeather(city) {
 
 searchBtn.addEventListener('click', function () {
     console.log(input.value);
-    getWeather(input.value);
+
+    if (input.value == '') {
+        document.getElementById('error').style.display = 'block';
+        document.getElementById('weather').style.display = 'none';
+    }
+    else {
+        getWeather(input.value);
+    }
+
 });
 
 function changeDom(weatherData) {
